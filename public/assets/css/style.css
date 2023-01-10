@@ -1,0 +1,48 @@
+/** 
+* Mobile Navigation
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Posans-serif';
+} 
+
+
+
+/* 980px  */
+@media (max-width: 62em) {
+    nav{
+        background-color: #24A224;
+        padding: 0;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: fixed
+        
+    } 
+    .navbar  h1 {
+        color: #fff; 
+        text-align: center;
+    }
+
+    section .btn-primary{
+        background-color: #24A224;
+        border-color: #fff;
+    }
+
+    section .btn-secondary{
+        background-color: rgb(139, 137, 137);
+    }
+
+    .mob-image{
+        max-width: 100px !important;
+    }.mob-image img{ max-width: 100%; object-fit: cover;height: auto;margin: auto;}
+    .mob-details{
+        width: 70%;max-width: 250px;
+    }.row.mob{justify-content: space-between; display: flex;}
+
+    }
+
+   
