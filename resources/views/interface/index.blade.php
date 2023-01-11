@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vintage Ci</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
     
 </head>
@@ -18,86 +17,62 @@
       <h1 class="navbar-brand" href="#">Vintage Ci</a>
     </div>
 </nav>
-<section class="slide">
-    <div class="container*fluid">
-        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
-                <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=789&q=80" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item" data-bs-interval="2000">
-                <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=789&q=80" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://images.unsplash.com/photo-1530319067432-f2a729c03db5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=789&q=80" class="d-block w-100" alt="...">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+<section id="slide">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{ asset('assets/img/slide.png') }}" class="d-block w-100" alt="...">
           </div>
-    </div>
+          <div class="carousel-item">
+            <img src="{{ asset('assets/img/slide.png') }}" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="{{ asset('assets/img/slide.png') }}" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </section>
-  
-  <section>
+  <section id="section-bottom">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 col-lg-10 col-sm-10 d-block text-center m-auto">
-                <a href="" class="btn btn-block btn-primary text-center w-100 my-1">Poster une annonce</a>
-                <a href="" class="btn btn-block btn-secondary text-center w-100 my-1">Acceder à mon compte</a>
-                <a href="" class="btn btn-block btn-secondary  text-center w-100 my-1">Créer un compte</a>
+                <a href="" class="btn btn-block btn-primary text-center w-100 my-1"><h6 class="text-bottom">Poster une annonce</h6></a>
+                <a href="" class="btn btn-block btn-default text-center w-100 my-1"><h6 class="text-bottom">Accéder à mon compte</h6></a>
+                <a href="" class="btn btn-block btn-secondary  text-center w-100 my-1"><h6 class="text-bottom">Créer un compte</h6></a>
+                <h1 id="icon-text"><i class="fa fa-info-circle" aria-hidden="true"></i>Comment ça marche ?</h1>
             </div>
         </div>
-        <div>
-            <h1 class="text-center">Comment ça fonctionne ?</h1>
-        </div>
     </div>
-  </section><br>
+  </section><br><br>
 
-  <section>
+  <section id="card">
+    <h2  class="title-annonce text-center">Voir toutes les annonces en couts</h2>
     <div class="container">
-        <h2>Voir toutes les annonces en cours</h2>
-    </div>
-  </section>
-  <section>
-    <div class="container">
-        <div class="row">
-            <div class="card mb-3">
-                <div class="row mob">
-                  <div class="col-md-4 mob-image">
-                    <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8 mob-details">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="card mb-3">
-                <div class="row mob">
-                  <div class="col-md-4 mob-image">
-                    <img src="https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8 mob-details">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://plus.unsplash.com/premium_photo-1661378738488-374f27792883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
   </section>
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </html>
