@@ -12,11 +12,6 @@
 </head>
 <body>
     <!-- As a link -->
-<nav class="navbar">
-    <div class="container-fluid">
-      <h1 class="navbar-brand" href="#">Vintage Ci</a>
-    </div>
-</nav>
 <section id="slide">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -51,21 +46,44 @@
             </div>
         </div>
     </div>
-  </section><br><br>
+  </section><br>
 
-  <section id="card">
-    <h2  class="title-annonce text-center">Voir toutes les annonces en couts</h2>
+  <section id="card w-100">
+    <h6  class="title-annonce text-center">Voir toutes les annonces en cours</h6>
     <div class="container">
-      <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3">
         <div class="row g-0">
           <div class="col-md-4">
             <img src="https://plus.unsplash.com/premium_photo-1661378738488-374f27792883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80" class="img-fluid rounded-start" alt="...">
           </div>
           <div class="col-md-8">
+            <div class="product-label-group">
+              <a href=""><button class="btn btn-success button-vip">VIP</button></a>
+            </div>
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              <a href=""class="card-text product-name">Cusines</a>
+              <p class="card-text">Tee-shirt manche longue pour enfant de 8</p>
+              <a href=""><h4 class="card-text">A Abidjan</h4></a>
+              <h6 class="card-text"><small class="text-muted">Le: 30-11-2022 à 22:59</small></h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="https://plus.unsplash.com/premium_photo-1661378738488-374f27792883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="product-label-group">
+              <a href=""><button class="btn btn-success button-vip">VIP</button></a>
+            </div>
+            <div class="card-body">
+              <a href=""class="card-text product-name">Cusines</a>
+              <p class="card-text">Tee-shirt manche longue pour enfant de 8</p>
+              <a href=""><h4 class="card-text">A Abidjan</h4></a>
+              <h6 class="card-text"><small class="text-muted">Le: 30-11-2022 à 22:59</small></h6>
             </div>
           </div>
         </div>
