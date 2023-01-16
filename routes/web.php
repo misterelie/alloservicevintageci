@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// interface mobile 
+// interface mobile
 
 Route::get('/index', [MobileController::class, 'index']);
+Route::get('/register', [MobileController::class, 'register'])->name('interface.register');
+Route::get('/login', [MobileController::class, 'login'])->name('interface.login');

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    
+
 </head>
 <body>
     <!-- As a link -->
@@ -36,14 +36,13 @@
       </div>
 </section>
 
-
   <section id="section-bottom">
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 col-lg-10 col-sm-10 d-block text-center m-auto">
                 <a href="" class="btn btn-block btn-primary text-center w-100 my-1"><h6 class="text-bottom">Poster une annonce</h6></a>
-                <a href="" class="btn btn-block btn-secondary text-center w-100 my-1"><h6 class="text-bottom">Accéder à mon compte</h6></a>
-                <a href="" class="btn btn-block btn-secondary  text-center w-100 my-1"><h6 class="text-bottom">Créer un compte</h6></a>
+                <a href="{{route('interface.login')}}" class="btn btn-block btn-secondary text-center w-100 my-1"><h6 class="text-bottom">Accéder à mon compte</h6></a>
+                <a href="{{route('interface.register')}}" class="btn btn-block btn-secondary  text-center w-100 my-1"><h6 class="text-bottom">Créer un compte</h6></a>
                 <h1 id="icon-text"><i class="fa fa-info-circle" aria-hidden="true"></i>Comment ça marche ?</h1>
             </div>
         </div>
@@ -88,7 +87,7 @@
                   </tr>
                 </tbody>
               </table>
-              
+
             </div>
             {{-- fin de la carte --}}
 
@@ -110,7 +109,7 @@
                         </div>
                         <div class="item-infos">
                             <div class="item-details">
-        
+
                             </div>
                           <div class="item-meta">
                             <span class="date">Il y a: 6 heures</span>
@@ -125,7 +124,7 @@
                   </tr>
                 </tbody>
               </table>
-              
+
             </div>
             {{-- fin de la carte --}}
 
@@ -588,9 +587,13 @@
     </div>
   </section>
 
+  <footer>
+
+  </footer>
 
 
-  
+
+
 <!-- end section product--->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
