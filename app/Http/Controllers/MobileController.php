@@ -21,4 +21,9 @@ class MobileController extends Controller
     {
         return view('interface.login');
     }
+
+    public function annonce()
+    {
+        return view('interface.pub_annonce');
+    }
 }

@@ -23,3 +23,4 @@ Route::get('/', function () {
 Route::get('/index', [MobileController::class, 'index']);
 Route::get('/register', [MobileController::class, 'register'])->name('interface.register');
 Route::get('/login', [MobileController::class, 'login'])->name('interface.login');
+Route::get('/pub', [MobileController::class, 'annonce'])->name('interface.pub_annonce');
