@@ -25,8 +25,7 @@
                     <div class="col-lg-12 m-auto col-md-12 col-sm-12">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 m-auto">
-                                <form action="" method="post" id="image-upload" enctype="multipart/form-data"
-                                  >
+                                <form action="" method="post" id="image-upload" enctype="multipart/form-data">
                                     <fieldset class="mb-4">
                                         <div class="card ">
                                             <div class="card-header px-4 py-3 bg-bordeau">
@@ -35,10 +34,11 @@
                                             <div class="card-body p-4">
                                                 <div class="row mb-2">
                                                     <div class="col-sm-6   mb-2">
-                                                        <label for="lieu_service" class="form-label">Titre de l'annonce <span class="text-red">*</span> 
+                                                        <label for="lieu_service" class="form-label">Titre de l'annonce
+                                                            <span class="text-red">*</span>
                                                             :</label>
                                                         <input type="text" name="titre_annonce" id="titre_annonce"
-                                                            class="form-control" required>
+                                                            class="form-control" required="Veuillez remplir ce champ!">
                                                     </div>
 
                                                     <div class="col-sm-6  mb-2">
@@ -86,93 +86,43 @@
                                                         <label for="price_annonce" class="form-label">Prix de l'annonce
                                                             : <span class="text-red">*</span></label>
                                                         <input type="number" name="price_annonce" id="price_annonce"
-                                                            class="form-control " required>
+                                                            class="form-control" required>
                                                     </div>
-                                                   
+
                                                     <!--end::Input group-->
                                                     <div class="form-group mb-2 mt-2">
                                                         <!--begin::Input group-->
                                                         <div class="form-group row">
                                                             <!--begin::Label-->
-                                                            <label
-                                                                class="col-lg-2 col-form-label text-lg-right">Ajouter la Photo de l'annonce: <span class="text-red">*</span> </label>
-                                                            <!--end::Label-->
-
-                                                            <!--begin::Col-->
-                                                            <div class="col-lg-10">
+                                                            <label class="col-lg-2 col-form-label text-lg-right">Ajouter
+                                                                la Photo de l'annonce: <span class="text-red">*</span>
+                                                            </label>
+                                                            <!--begin::Input group-->
+                                                            <div class="fv-row">
                                                                 <!--begin::Dropzone-->
-                                                                <div class="dropzone dropzone-queue mb-2"
-                                                                    id="kt_dropzonejs_example_2">
-                                                                    <!--begin::Controls-->
-                                                                    <div class="dropzone-panel mb-lg-0 mb-2">
-                                                                        <a class="dropzone-select btn btn-sm btn-primary me-2">Joindre
-                                                                            des fichiers</a>
-                                                                        <a
-                                                                            class="dropzone-upload btn btn-sm btn-light-primary me-2">Télécharger
-                                                                            tout</a>
-                                                                        <a
-                                                                            class="dropzone-remove-all btn btn-sm btn-light-primary">Retirer tout</a>
-                                                                    </div>
-                                                                    <!--end::Controls-->
+                                                                <div class="dropzone" id="kt_dropzonejs_example_1">
+                                                                    <!--begin::Message-->
+                                                                    <div class="dz-message needsclick">
+                                                                        <!--begin::Icon-->
+                                                                        <i
+                                                                            class="fa fa-camera earmark-arrow-up text-primary fs-3x"></i>
+                                                                        <!--end::Icon-->
 
-                                                                    <!--begin::Items-->
-                                                                    <div class="dropzone-items wm-200px">
-                                                                        <div class="dropzone-item" style="display:none">
-                                                                            <!--begin::File-->
-                                                                            <div class="dropzone-file">
-                                                                                <div class="dropzone-filename"
-                                                                                    title="some_image_file_name.jpg">
-                                                                                    <span
-                                                                                        data-dz-name>some_image_file_name.jpg</span>
-                                                                                    <strong>(<span
-                                                                                            data-dz-size>340kb</span>)</strong>
-                                                                                </div>
-
-                                                                                <div class="dropzone-error"
-                                                                                    data-dz-errormessage></div>
-                                                                            </div>
-                                                                            <!--end::File-->
-
-                                                                            <!--begin::Progress-->
-                                                                            <div class="dropzone-progress">
-                                                                                <div class="progress">
-                                                                                    <div class="progress-bar bg-primary"
-                                                                                        role="progressbar"
-                                                                                        aria-valuemin="0"
-                                                                                        aria-valuemax="100"
-                                                                                        aria-valuenow="0"
-                                                                                        data-dz-uploadprogress>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <!--end::Progress-->
-
-                                                                            <!--begin::Toolbar-->
-                                                                            <div class="dropzone-toolbar">
-                                                                                <span class="dropzone-start"><i
-                                                                                        class="bi bi-play-fill fs-3"></i></span>
-                                                                                <span class="dropzone-cancel"
-                                                                                    data-dz-remove
-                                                                                    style="display: none;"><i
-                                                                                        class="bi bi-x fs-3"></i></span>
-                                                                                <span class="dropzone-delete"
-                                                                                    data-dz-remove><i
-                                                                                        class="bi bi-x fs-1"></i></span>
-                                                                            </div>
-                                                                            <!--end::Toolbar-->
+                                                                        <!--begin::Info-->
+                                                                        <div class="ms-4">
+                                                                            <h3 class="fs-5 fw-bold text-gray-900 mb-1">
+                                                                                Déposez vos fichiers ici ou cliquez pour les télécharger.</h3>
+                                                                            <span
+                                                                                class="fs-7 fw-semibold text-gray-400">Télécharger
+                                                                                jusqu'à 10 fichiers</span>
                                                                         </div>
+                                                                        <!--end::Info-->
                                                                     </div>
-                                                                    <!--end::Items-->
                                                                 </div>
                                                                 <!--end::Dropzone-->
-
-                                                                <!--begin::Hint-->
-                                                                <span class="form-text text-muted"></span>
-                                                                <!--end::Hint-->
                                                             </div>
-                                                            <!--end::Col-->
+                                                            <!--end::Input group-->
                                                         </div>
-                                                        <!--end::Input group-->
                                                     </div>
                                                     <div class="form-group mb-2">
                                                         <label for="details_annonce" class="form-label">Détails de
@@ -200,98 +150,20 @@
 
 </body>
 <script type="text/javascript">
-    // set the dropzone container id
-    const id = "#kt_dropzonejs_example_2";
-    const dropzone = document.querySelector(id);
-
-    // set the preview element template
-    var previewNode = dropzone.querySelector(".dropzone-item");
-    previewNode.id = "";
-    var previewTemplate = previewNode.parentNode.innerHTML;
-    previewNode.parentNode.removeChild(previewNode);
-
-    var myDropzone = new Dropzone(id, { // Make the whole body a dropzone
-        url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-        parallelUploads: 20,
-        previewTemplate: previewTemplate,
-        maxFilesize: 1, // Max filesize in MB
-        autoQueue: false, // Make sure the files aren't queued until manually added
-        previewsContainer: id + " .dropzone-items", // Define the container to display the previews
-        clickable: id +
-            " .dropzone-select" // Define the element that should be used as click trigger to select files.
-    });
-
-    myDropzone.on("addedfile", function (file) {
-        // Hookup the start button
-        file.previewElement.querySelector(id + " .dropzone-start").onclick = function () {
-            myDropzone.enqueueFile(file);
-        };
-        const dropzoneItems = dropzone.querySelectorAll('.dropzone-item');
-        dropzoneItems.forEach(dropzoneItem => {
-            dropzoneItem.style.display = '';
-        });
-        dropzone.querySelector('.dropzone-upload').style.display = "inline-block";
-        dropzone.querySelector('.dropzone-remove-all').style.display = "inline-block";
-    });
-
-    // Update the total progress bar
-    myDropzone.on("totaluploadprogress", function (progress) {
-        const progressBars = dropzone.querySelectorAll('.progress-bar');
-        progressBars.forEach(progressBar => {
-            progressBar.style.width = progress + "%";
-        });
-    });
-
-    myDropzone.on("sending", function (file) {
-        // Show the total progress bar when upload starts
-        const progressBars = dropzone.querySelectorAll('.progress-bar');
-        progressBars.forEach(progressBar => {
-            progressBar.style.opacity = "1";
-        });
-        // And disable the start button
-        file.previewElement.querySelector(id + " .dropzone-start").setAttribute("disabled", "disabled");
-    });
-
-    // Hide the total progress bar when nothing's uploading anymore
-    myDropzone.on("complete", function (progress) {
-        const progressBars = dropzone.querySelectorAll('.dz-complete');
-
-        setTimeout(function () {
-            progressBars.forEach(progressBar => {
-                progressBar.querySelector('.progress-bar').style.opacity = "0";
-                progressBar.querySelector('.progress').style.opacity = "0";
-                progressBar.querySelector('.dropzone-start').style.opacity = "0";
-            });
-        }, 300);
-    });
-
-    // Setup the buttons for all transfers
-    dropzone.querySelector(".dropzone-upload").addEventListener('click', function () {
-        myDropzone.enqueueFiles(myDropzone.getFilesWithStatus(Dropzone.ADDED));
-    });
-
-    // Setup the button for remove all files
-    dropzone.querySelector(".dropzone-remove-all").addEventListener('click', function () {
-        dropzone.querySelector('.dropzone-upload').style.display = "none";
-        dropzone.querySelector('.dropzone-remove-all').style.display = "none";
-        myDropzone.removeAllFiles(true);
-    });
-
-    // On all files completed upload
-    myDropzone.on("queuecomplete", function (progress) {
-        const uploadIcons = dropzone.querySelectorAll('.dropzone-upload');
-        uploadIcons.forEach(uploadIcon => {
-            uploadIcon.style.display = "none";
-        });
-    });
-
-    // On all files removed
-    myDropzone.on("removedfile", function (file) {
-        if (myDropzone.files.length < 1) {
-            dropzone.querySelector('.dropzone-upload').style.display = "none";
-            dropzone.querySelector('.dropzone-remove-all').style.display = "none";
+   var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+    url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
+    paramName: "file", // The name that will be used to transfer the file
+    maxFiles: 10,
+    maxFilesize: 10, // MB
+    addRemoveLinks: true,
+    accept: function(file, done) {
+        if (file.name == "wow.jpg") {
+            done("Naha, you don't.");
+        } else {
+            done();
         }
-    });
+    }
+});
 </script>
 
 </html>
