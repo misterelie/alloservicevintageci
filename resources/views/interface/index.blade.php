@@ -13,21 +13,92 @@
 </head>
 
 <body>
+    <header>
+        <div class="container-fluid">
+            <!-- Button trigger modal -->
+            <div class="mobile-toggler d-lg-none">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="navb-logo">
+                <a href="{{ route('interface.index') }}"><img
+                        src="{{ asset('assets/img/icon-android.png') }}" alt="Logo"></a>
+            </div>
+
+            <div class="mobile-toggler d-lg-none">
+                <a href="{{ route('interface.login') }}">
+                    <i class="fa fa-user-plus"></i>
+                </a>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <a href="{{ route('interface.index') }}"><img
+                                    src="{{ asset('assets/img/ICONES-04.png') }}" alt="Logo"></a>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-line">
+                                <i class="fa fa-home" aria-hidden="true"></i><a
+                                    href="{{ route('interface.index') }}">Accueil</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="fa fa-list" aria-hidden="true"></i><a
+                                    href="http://vintage.alloservice.ci/annonces/categories">Toutes Les Catégories</a>
+                            </div>
+                            <div class="modal-line">
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i><a href="">Poster Une Annonce<a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa fa-plus" aria-hidden="true"></i><a
+                                    href="http://vintage.alloservice.ci/annonces">Toutes les annonces</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa fa-plus" aria-hidden="true"></i><a
+                                    href="http://vintage.alloservice.ci/annonces/pro/1">Les Annonces VIP</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa fa-plus" aria-hidden="true"></i><a
+                                    href="http://vintage.alloservice.ci/annonces/communes">Annonces Par Commune</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa fa-credit-card" aria-hidden="true"></i><a
+                                    href="http://vintage.alloservice.ci/credits">Acheter Du Crédit</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa fa-question" aria-hidden="true"></i><a
+                                    href="http://vintage.alloservice.ci/credits">Aide</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <!-- As a link -->
     <section id="slide">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://plus.unsplash.com/premium_photo-1661378738488-374f27792883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80"
-                        class="d-block w-100" alt="...">
+                    <img src="{{ asset('assets/img/BANNIERE.jpg') }}" class="d-block w-100"
+                        alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://plus.unsplash.com/premium_photo-1661378738488-374f27792883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80"
-                        class="d-block w-100" alt="...">
+                    <img src="{{ asset('assets/img/BANNIERE.jpg') }}" class="d-block w-100"
+                        alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://plus.unsplash.com/premium_photo-1661378738488-374f27792883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80"
-                        class="d-block w-100" alt="...">
+                    <img src="{{ asset('assets/img/BANNIERE.jpg') }}" class="d-block w-100"
+                        alt="...">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -63,13 +134,13 @@
                 </div>
             </div>
         </div>
-    </section><br>
-
+    </section>
+    
     <!--section product--->
     <section id="card w-100">
         <div class="container">
             <div class="row">
-                <h5 class="title-annonce text-center">Voir toutes les annonces en cours</h5>
+                <h5 class="title-annonce text-center">Les annonces en cours...</h5>
                 <div class="col-lg-12 col-12 col-md-12 m-auto">
                     <div class="card card-item mb-3">
                         <table width="100%">
@@ -592,35 +663,49 @@
                         </table>
                     </div>
 
-                    <div class="container">
-                        <nav aria-label="Pagination">
-                            <ul class="pagination">
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Previous">
-                                        <span aria-hidden="true">«</span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                </li>
-                                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                <li class="page-item">
-                                    <a class="page-link" href="#" aria-label="Next">
-                                        <span aria-hidden="true">»</span>
-                                        <span class="sr-only">Next</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                    <div class="view-plus">
+                        <a class="btn btn-lg btn-success" href="{{ route('annonce-product') }}" role="button">Voir toutes les annonces »</a>
                     </div>
+
                 </div>
             </div>
         </div>
+    </section><br><br> <hr>
+
+    <!-- Bottom Navbar -->
+    <section>
+        <!-- Bottom Navbar -->
+        <nav class="navbar py-15 navbar-dark  navbar-expand fixed-bottom">
+            <ul class="navbar-nav nav-justified w-100">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-center">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        <span class="small d-block">Acheter du crédit</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-center">
+                        <i class="fa fa-list-alt" aria-hidden="true"></i>
+                        <span class="small d-block">Toutes les catégories</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-center">
+                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                        <span class="small d-block">Publier une annonce</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-center">
+                        <i class="fa fa-question" aria-hidden="true"></i>
+                        <span class="small d-block">Comment ça marche?</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
     </section>
-
-
-
-
     <!-- end section product--->
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"

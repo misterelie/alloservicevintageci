@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Vintage Ci</title>
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-        <script src="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone-min.js"></script>
-        <link href="https://unpkg.com/dropzone@6.0.0-beta.1/dist/dropzone.css" rel="stylesheet" type="text/css" />
-    </head>
-</head>
-
-<body>
+@extends('layouts.base')
+@section('content')
     <main>
         <section class="services-page spad">
             <div class="container">
@@ -27,7 +10,7 @@
                             <div class="col-md-12 col-sm-12 m-auto">
                                 <form action="" method="post" id="image-upload" enctype="multipart/form-data">
                                     <fieldset class="mb-4">
-                                        <div class="card ">
+                                        <div class="card card-auth">
                                             <div class="card-header px-4 py-3 bg-bordeau">
                                                 <h4 class="card-title text-white">Publier une annonce</h4>
                                             </div>
@@ -133,14 +116,12 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="form-group d-block text-right">
+                                                <button type="submit" class="btn submit-btn">Publier l'annonce</button>
+                                            </div>
                                     </fieldset>
-
-                                    <div class="form-group d-block text-right">
-                                        <button type="submit" class="btn submit-btn">Publier l'annonce</button>
-                                    </div>
                                 </form>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -148,22 +129,5 @@
         </section>
     </main>
 
-</body>
-<script type="text/javascript">
-   var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
-    url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
-    paramName: "file", // The name that will be used to transfer the file
-    maxFiles: 10,
-    maxFilesize: 10, // MB
-    addRemoveLinks: true,
-    accept: function(file, done) {
-        if (file.name == "wow.jpg") {
-            done("Naha, you don't.");
-        } else {
-            done();
-        }
-    }
-});
-</script>
-
-</html>
+    @yield('js')
+@endsection

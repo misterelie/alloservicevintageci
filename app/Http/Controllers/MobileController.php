@@ -26,4 +26,14 @@ class MobileController extends Controller
     {
         return view('interface.pub_annonce');
     }
+
+    //all annonces
+    public function annonce_product(){
+        return view('interface.annonce-product');
+    }
+
+    //categorie products
+    public function catergory_product(){
+        return view('interface.categorie-product');
+    }
 }
