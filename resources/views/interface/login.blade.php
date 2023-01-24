@@ -16,20 +16,21 @@
                                         <h4 class="card-title text-white text-center">authentification</h4>
                                     </div>
                                     <div class="card-body-login p-4">
-                                        <form class="form-horizontal cash-form" action="" method="POST"
-                                            autocomplete="off">
+                                        <form class="form-horizontal cash-form" action="" method="POST">
                                             <input type="hidden" name="_token"
                                                 value="2EQ4TFuRvrfLXDrhNaSjBZSuCZqrBz8fMRnRZvBO">
                                             <div class="mb-3">
-                                                <label for="user_email" class="form-label">Email : </label>
+                                                <label for="user_email" class="form-label">Email : <span
+                                                    class="text-red">*</span> </label>
                                                 <input type="text" class="form-control" name="user_email"
                                                     id="user_email" placeholder="Votre adresse Email" required="">
                                             </div>
                                             <div class="mb-3">
-                                                <label class="form-label">Mot de passe :</label>
+                                                <label class="form-label">Mot de passe : <span
+                                                    class="text-red">*</span></label>
                                                 <div class="input-group auth-pass-inputgroup">
                                                     <input type="password" name="user_password" class="form-control"
-                                                        placeholder="Mot de passe" aria-label="Password"
+                                                        placeholder="Votre mot de passe" aria-label="Password"
                                                         aria-describedby="password-addon" required="">
                                                 </div>
                                             </div>
@@ -44,14 +45,14 @@
                                                 <button class="btn primary-btn fw-bold waves-effect waves-light"
                                                     type="submit">Se connecter</button>
                                             </div>
-                                            <div class="text-center">
-                                                <a href="#!" class="text-mutedd"><i class="fa fa-lock"
+                                            <div class="text-center bg-gray">
+                                                <a href="{{ route('reset_password')}}" class="text-mutedd"><i class="fa fa-lock"
                                                         aria-hidden="true"></i>Réinitialiser mon mot de passe!</a>
                                             </div>
 
                                             <div class="mt-2 text-center">
                                                 <a href="{{ route('interface.register') }}"
-                                                    class="text-muted"><span>Pas encore inscit?</span><h5 class="create_count">Créer un compte</h5></a>
+                                                    class="text-muted"><span>Pas encore inscrit?</span><h5 class="create_count">Créer un compte</h5></a>
                                             </div>
                                         </form>
                                     </div>

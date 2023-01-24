@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-
 </head>
 
 <body>
@@ -47,35 +46,38 @@
                             </div>
                             <div class="modal-line">
                                 <i class="fa fa-list" aria-hidden="true"></i><a
-                                    href="http://vintage.alloservice.ci/annonces/categories">Toutes Les Catégories</a>
+                                    href="{{ route('all-category-product') }}">Toutes Les
+                                    Catégories</a>
                             </div>
                             <div class="modal-line">
-                                <i class="fa fa-bullhorn" aria-hidden="true"></i><a href="">Poster Une Annonce<a>
-                            </div>
-
-                            <div class="modal-line">
-                                <i class="fa fa-plus" aria-hidden="true"></i><a
-                                    href="http://vintage.alloservice.ci/annonces">Toutes les annonces</a>
+                                <i class="fa fa-bullhorn" aria-hidden="true"></i><a
+                                    href="{{ route('interface.login') }}">Poster Une Annonce<a>
                             </div>
 
                             <div class="modal-line">
                                 <i class="fa fa-plus" aria-hidden="true"></i><a
-                                    href="http://vintage.alloservice.ci/annonces/pro/1">Les Annonces VIP</a>
+                                    href="{{ route('annonce-product') }}">Toutes les annonces</a>
                             </div>
 
                             <div class="modal-line">
                                 <i class="fa fa-plus" aria-hidden="true"></i><a
-                                    href="http://vintage.alloservice.ci/annonces/communes">Annonces Par Commune</a>
+                                    href="{{ route('interface.annonce_vip') }}">Les Annonces VIP</a>
+                            </div>
+
+                            <div class="modal-line">
+                                <i class="fa fa-plus" aria-hidden="true"></i><a
+                                    href="{{ route('interface.commune') }}">Annonces Par
+                                    Commune</a>
                             </div>
 
                             <div class="modal-line">
                                 <i class="fa fa-credit-card" aria-hidden="true"></i><a
-                                    href="http://vintage.alloservice.ci/credits">Acheter Du Crédit</a>
+                                    href="{{ route('interface.buy_credit') }}">Acheter Du Crédit</a>
                             </div>
 
                             <div class="modal-line">
                                 <i class="fa fa-question" aria-hidden="true"></i><a
-                                    href="http://vintage.alloservice.ci/credits">Aide</a>
+                                    href="{{ route('interface.mediatheque_aide') }}">Aide</a>
                             </div>
                         </div>
                     </div>
@@ -135,7 +137,7 @@
             </div>
         </div>
     </section>
-    
+
     <!--section product--->
     <section id="card w-100">
         <div class="container">
@@ -143,12 +145,13 @@
                 <h5 class="title-annonce text-center">Les annonces en cours...</h5>
                 <div class="col-lg-12 col-12 col-md-12 m-auto">
                     <div class="card card-item mb-3">
+                        <a href="{{ route('interface.detail_annonce')}}" class="lien-annonce"></a>
                         <table width="100%">
                             <tbody width="100%">
                                 <tr width="100%">
                                     <td class="media-col width-25">
                                         <div class="card-media">
-                                            <img src="https://plus.unsplash.com/premium_photo-1661378738488-374f27792883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=831&q=80"
+                                            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
                                                 class="img-fluid rounded-start" alt="...">
                                         </div>
                                     </td>
@@ -180,6 +183,7 @@
                     {{-- fin de la carte --}}
 
                     <div class="card card-item mb-3">
+                        <a href="{{ route('interface.detail_annonce')}}" class="lien-annonce"></a>
                         <table width="100%">
                             <tbody width="100%">
                                 <tr width="100%">
@@ -218,6 +222,7 @@
                     {{-- fin de la carte --}}
 
                     <div class="card card-item mb-3">
+                        <a href="{{ route('interface.detail_annonce')}}" class="lien-annonce"></a>
                         <table width="100%">
                             <tbody width="100%">
                                 <tr width="100%">
@@ -662,15 +667,15 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div class="view-plus">
-                        <a class="btn btn-lg btn-success" href="{{ route('annonce-product') }}" role="button">Voir toutes les annonces »</a>
+                        <a class="btn btn-lg btn-success" href="{{ route('annonce-product') }}"
+                            role="button">Voir toutes les annonces »</a>
                     </div>
-
                 </div>
             </div>
         </div>
-    </section><br><br> <hr>
+    </section><br><br>
+    <hr>
 
     <!-- Bottom Navbar -->
     <section>
@@ -678,26 +683,26 @@
         <nav class="navbar py-15 navbar-dark  navbar-expand fixed-bottom">
             <ul class="navbar-nav nav-justified w-100">
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">
+                    <a href="{{ route('interface.buy_credit') }}" class="nav-link text-center">
                         <i class="fa fa-credit-card" aria-hidden="true"></i>
                         <span class="small d-block">Acheter du crédit</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">
+                    <a href="{{ route('all-category-product') }}" class="nav-link text-center">
                         <i class="fa fa-list-alt" aria-hidden="true"></i>
                         <span class="small d-block">Toutes les catégories</span>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">
+                    <a href="{{ route('interface.login') }}" class="nav-link text-center">
                         <i class="fa fa-bullhorn" aria-hidden="true"></i>
                         <span class="small d-block">Publier une annonce</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link text-center">
+                    <a href="{{ route('interface.mediatheque_aide') }}" class="nav-link text-center">
                         <i class="fa fa-question" aria-hidden="true"></i>
                         <span class="small d-block">Comment ça marche?</span>
                     </a>

@@ -3,10 +3,9 @@
 <section id="card w-100">
     <div class="container">
         <div class="row">
-            <h5 class="title-annonce text-center">Les annonces en cours...</h5>
+            <h5 class="title-annonce text-center">Les annonces par catégories</h5>
             <div class="col-lg-12 col-12 col-md-12 m-auto">
                 <div class="card card-item mb-3">
-                    <a href="" class="lien-annonce"></a>
                     <table width="100%">
                         <tbody width="100%">
                             <tr width="100%">
