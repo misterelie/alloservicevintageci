@@ -12,6 +12,7 @@
                             <fieldset class="mb-4">
                                 <div class="card card-auth">
                                     <div class="card-header px-4 py-4 bg-bordeau">
+                                        <i class="fa fa-user" id="user"></i> 
                                         <h4 class="card-title text-white text-center">RÉCUPÉRER MON COMPTE</h4>
                                     </div>
                                     <div class="card-body-login p-4">
@@ -23,7 +24,7 @@
                                                 <label for="user_email" class="form-label">Email de récupération
                                                     : <span class="text-red">*</span></label>
                                                 <input type="text" class="form-control" name="user_email"
-                                                    id="user_email" placeholder="Votre email de récupération de compte"
+                                                    id="user_email" placeholder="Votre email de récupération"
                                                     required="">
                                             </div>
 

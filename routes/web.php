@@ -34,3 +34,4 @@ Route::get('/credits', [MobileController::class, 'buycredit'])->name('interface.
 Route::get('/annonce-categorie', [MobileController::class, 'annonce_categorie'])->name('interface.annonce_category');
 Route::get('/annonce-commune', [MobileController::class, 'commune_annonce'])->name('interface.commune_annonce');
 Route::get('/detail', [MobileController::class, 'detail_annonce'])->name('interface.detail_annonce');
+Route::get('/contact', [MobileController::class, 'contact'])->name('interface.contact');

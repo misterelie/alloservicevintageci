@@ -76,4 +76,10 @@ class MobileController extends Controller
     public function detail_annonce(){
         return view('interface.detail_annonce');
     }
+
+     
+    // detail annonce
+    public function contact(){
+        return view('interface.contact');
+    }
 }

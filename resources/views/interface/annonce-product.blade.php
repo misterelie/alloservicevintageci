@@ -3,6 +3,18 @@
 <section id="card w-100">
     <div class="container">
         <div class="row">
+            <form action="" class="search-bar mb-3" method="">
+                <div class="input-group box">
+                    <div class="input-group-prepend">
+                        <button id="button-addon8" type="submit"
+                            class="btn btn-sm btn-primary bouton-search"><i
+                                class="fa fa-search text-align:center !important"
+                                style="color: #fff"></i></button>
+                    </div>
+                    <input type="search" placeholder="Recherhcer une annonce"
+                        aria-describedby="button-addon8" id="form-search" class="form-control">
+                </div>
+            </form>
             <h5 class="title-annonce text-center">Les annonces en cours...</h5>
             <div class="col-lg-12 col-12 col-md-12 m-auto">
                 <div class="card card-item mb-3">

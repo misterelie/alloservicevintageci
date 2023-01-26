@@ -41,6 +41,20 @@
                         </div>
                         <div class="modal-body">
                             <div class="modal-line">
+                                <form action="" class="search-bar">
+                                    <div class="input-group box">
+                                        <div class="input-group-prepend">
+                                            <button id="button-addon8" type="submit"
+                                                class="btn btn-sm btn-primary bouton-search"><i
+                                                    class="fa fa-search text-align:center !important"
+                                                    style="color: #fff"></i></button>
+                                        </div>
+                                        <input type="search" placeholder="Recherhce ici"
+                                            aria-describedby="button-addon8" id="form-search" class="form-control">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-line mb-2">
                                 <i class="fa fa-home" aria-hidden="true"></i><a
                                     href="{{ route('interface.index') }}">Accueil</a>
                             </div>
@@ -79,6 +93,12 @@
                                 <i class="fa fa-question" aria-hidden="true"></i><a
                                     href="{{ route('interface.mediatheque_aide') }}">Aide</a>
                             </div>
+
+                            <div class="modal-line">
+                                <i class="fa fa-phone" aria-hidden="true"></i><a
+                                    href="{{ route('interface.contact') }}">Contactez-nous</a>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -145,7 +165,7 @@
                 <h5 class="title-annonce text-center">Les annonces en cours...</h5>
                 <div class="col-lg-12 col-12 col-md-12 m-auto">
                     <div class="card card-item mb-3">
-                        <a href="{{ route('interface.detail_annonce')}}" class="lien-annonce"></a>
+                        <a href="{{ route('interface.detail_annonce') }}" class="lien-annonce"></a>
                         <table width="100%">
                             <tbody width="100%">
                                 <tr width="100%">
@@ -183,7 +203,7 @@
                     {{-- fin de la carte --}}
 
                     <div class="card card-item mb-3">
-                        <a href="{{ route('interface.detail_annonce')}}" class="lien-annonce"></a>
+                        <a href="{{ route('interface.detail_annonce') }}" class="lien-annonce"></a>
                         <table width="100%">
                             <tbody width="100%">
                                 <tr width="100%">
@@ -222,7 +242,7 @@
                     {{-- fin de la carte --}}
 
                     <div class="card card-item mb-3">
-                        <a href="{{ route('interface.detail_annonce')}}" class="lien-annonce"></a>
+                        <a href="{{ route('interface.detail_annonce') }}" class="lien-annonce"></a>
                         <table width="100%">
                             <tbody width="100%">
                                 <tr width="100%">
@@ -680,30 +700,30 @@
     <!-- Bottom Navbar -->
     <section>
         <!-- Bottom Navbar -->
-        <nav class="navbar py-15 navbar-dark  navbar-expand fixed-bottom">
+        <nav class="navbar py-15 navbar-dark navbar-expand fixed-bottom">
             <ul class="navbar-nav nav-justified w-100">
                 <li class="nav-item">
                     <a href="{{ route('interface.buy_credit') }}" class="nav-link text-center">
-                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        <i class="fa fa-credit-card iconbottombar" aria-hidden="true"></i>
                         <span class="small d-block">Acheter du crédit</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('all-category-product') }}" class="nav-link text-center">
-                        <i class="fa fa-list-alt" aria-hidden="true"></i>
+                        <i class="fa fa-list-alt iconbottombar" aria-hidden="true"></i>
                         <span class="small d-block">Toutes les catégories</span>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="{{ route('interface.login') }}" class="nav-link text-center">
-                        <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                        <span class="small d-block">Publier une annonce</span>
+                        <i class="fa fa-bullhorn iconbottombar" aria-hidden="true"></i>
+                        <span class="small d-block">Postez une annonce</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="{{ route('interface.mediatheque_aide') }}" class="nav-link text-center">
-                        <i class="fa fa-question" aria-hidden="true"></i>
+                        <i class="fa fa-question iconbottombar" aria-hidden="true"></i>
                         <span class="small d-block">Comment ça marche?</span>
                     </a>
                 </li>

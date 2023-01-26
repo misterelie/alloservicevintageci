@@ -13,7 +13,8 @@
                             <fieldset class="mb-4">
                                 <div class="card card-auth">
                                     <div class="card-header px-4 py-4 bg-bordeau">
-                                        <h4 class="card-title text-white text-center">authentification</h4>
+                                        <i class="fa fa-user" id="user"></i>
+                                        <h3 class="card-title text-white text-center text-login">authentification</h3>
                                     </div>
                                     <div class="card-body-login p-4">
                                         <form class="form-horizontal cash-form" action="" method="POST">

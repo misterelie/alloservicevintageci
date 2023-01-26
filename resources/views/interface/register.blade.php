@@ -13,6 +13,7 @@
                                 <fieldset>
                                     <div class="card card-auth">
                                         <div class="card-header px-4 py-3 bg-bordeau">
+                                            <i class="fa fa-user" id="user"></i>
                                             <h4 class="card-title text-white text-center">Inscrivez-vous</h4>
                                         </div>
                                         <div class="card-body p-4">
